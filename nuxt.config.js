@@ -74,8 +74,8 @@ export default {
   },
 
   proxy: {
-    '/api/': { target: process.env.BASE_API_URL1, pathRewrite: {'^/api/' : ''}, changeOrigin: true },
-    '/api2/': { target: process.env.BASE_API_URL2, pathRewrite: {'^/api2/' : ''}, changeOrigin: true },
+    '/api/': { target: 'https://my-json-server.typicode.com/NocturnScholar/nocturnscholar.github.io', pathRewrite: {'^/api/' : ''}, changeOrigin: true },
+    '/api2/': { target: 'https://dummyapi.io/data/api', pathRewrite: {'^/api2/' : ''}, changeOrigin: true },
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
